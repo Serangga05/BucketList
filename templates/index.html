@@ -150,10 +150,10 @@
         }
 
         function hapus(num) {
-            $ajax({
+            $.ajax({
                 type: 'POST',
                 url: "/bucket/delete",
-                data: {hapus_num:num},
+                data: {hapus_num: num },
                 success: function (response) {
                     alert(response['msg'])
                     window.location.reload();
